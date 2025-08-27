@@ -75,6 +75,18 @@ const Skills = ({ theme }) => {
       name: "Vercel",
     },
   ];
+  const backend = [
+    {
+      icon: assets.node,
+      icondark: assets.node,
+      name: "Node Js",
+    },
+    {
+      icon: assets.expresslight,
+      icondark: assets.expressdark,
+      name: "Express Js",
+    },
+  ];
 
   return (
     <section id="skills" className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -86,6 +98,7 @@ const Skills = ({ theme }) => {
         </p>
       </div>
       <TechSection title={"Front End"} skills={frontEnd} theme={theme} />
+      <TechSection title={"Back End"} skills={backend} theme={theme} />
       <TechSection title={"Database"} skills={database} theme={theme} />
       <TechSection title={"Tools & Platforms"} skills={tools} theme={theme} />
     </section>

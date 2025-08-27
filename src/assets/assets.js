@@ -25,6 +25,9 @@ import vercelDark from "./vercel-dark.svg";
 import vercelLight from "./vercel-light.svg";
 import vscode from "./vscode.svg";
 import location from "./location.svg";
+import node from "./node.svg";
+import expresslight from "./express-light.svg";
+import expressdark from "./express-dark.svg";
 
 const assets = {
   css,
@@ -54,6 +57,9 @@ const assets = {
   vscode,
   mail,
   location,
+  node,
+  expressdark,
+  expresslight,
 };
 
 export default assets;
