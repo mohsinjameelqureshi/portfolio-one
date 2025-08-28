@@ -49,7 +49,7 @@ const Hero = ({ theme }) => {
 
           {/* Buttons */}
           <div className="flex gap-3 items-center">
-            <a href="/mohsin.pdf" download="Mohsin-Resume.pdf">
+            <a href="/Mohsin.pdf" download="Mohsin-Resume.pdf">
               <button className="p-2 dark:bg-white bg-black text-white dark:text-black flex gap-2 rounded-lg text-sm items-center cursor-pointer hover:scale-105 transition">
                 <img
                   src={
