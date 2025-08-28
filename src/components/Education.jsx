@@ -13,7 +13,7 @@ const Education = ({ theme }) => {
     {
       name: "The Wings College Daultala",
       deg: "HSSC (Higher Secondary School Certificate) Bise RWP",
-      date: " Jun 2020 - May 2022 (present) • Marks: 950/1100",
+      date: " Jun 2020 - May 2022 • Marks: 950/1100",
       icon: assets.collegeLight,
       icondark: assets.collegeDark,
     },
