@@ -10,15 +10,7 @@ const Experience = () => {
         "Design full responsive functional UI for multiple roles in app (Recycle Blue).",
         "Design a full stack app like instagram but for soprts only with multiple roles (PlayPost).",
       ],
-      tech: [
-        "Flutter",
-        "Firebase",
-        "UI/UX",
-        "Responsive Design",
-        "Firebase",
-        "UI/UX",
-        "Responsive Design",
-      ],
+      tech: ["Flutter", "Firebase", "UI/UX", "Responsive Design"],
     },
   ];
   return (
