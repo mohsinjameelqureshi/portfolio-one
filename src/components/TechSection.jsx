@@ -4,7 +4,7 @@ import assets from "../assets/assets";
 const TechSection = ({ title, skills, theme }) => {
   return (
     <div className="py-6">
-      <h3 className="dark:text-white font-medium text-2xl transition-transform duration-200 hover:translate-x-2">
+      <h3 className="dark:text-white font-medium text-xl transition-transform duration-200 hover:translate-x-2">
         {title}
       </h3>
       <div className="flex gap-8">

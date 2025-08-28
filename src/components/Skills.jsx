@@ -17,7 +17,7 @@ const Skills = ({ theme }) => {
     {
       icon: assets.nextLight,
       icondark: assets.nextDark,
-      name: "JavaScript",
+      name: "Next JS",
     },
     {
       icon: assets.html,

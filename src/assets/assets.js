@@ -28,6 +28,14 @@ import location from "./location.svg";
 import node from "./node.svg";
 import expresslight from "./express-light.svg";
 import expressdark from "./express-dark.svg";
+import phonelight from "./phone-dark.svg";
+import phonedark from "./phone-light.svg";
+import locationdark from "./location-light.svg";
+import locationlight from "./location-dark.svg";
+import linkedinlight from "./linkedin-dark.svg";
+import linkedindark from "./linkedin-light.svg";
+import newMailLight from "./new-mail-light.svg";
+import newMailDark from "./new-mail-dark.svg";
 
 const assets = {
   css,
@@ -60,6 +68,14 @@ const assets = {
   node,
   expressdark,
   expresslight,
+  phonedark,
+  phonelight,
+  locationdark,
+  locationlight,
+  linkedindark,
+  linkedinlight,
+  newMailLight,
+  newMailDark,
 };
 
 export default assets;
