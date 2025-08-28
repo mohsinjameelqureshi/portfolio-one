@@ -36,6 +36,10 @@ import linkedinlight from "./linkedin-dark.svg";
 import linkedindark from "./linkedin-light.svg";
 import newMailLight from "./new-mail-light.svg";
 import newMailDark from "./new-mail-dark.svg";
+import collegeLight from "./college-light.svg";
+import collegeDark from "./college-dark.svg";
+import uniDark from "./university-dark.svg";
+import uniLight from "./university-light.svg";
 
 const assets = {
   css,
@@ -76,6 +80,10 @@ const assets = {
   linkedinlight,
   newMailLight,
   newMailDark,
+  collegeDark,
+  collegeLight,
+  uniDark,
+  uniLight,
 };
 
 export default assets;

@@ -7,7 +7,7 @@ const TechSection = ({ title, skills, theme }) => {
       <h3 className="dark:text-white font-medium text-xl transition-transform duration-200 hover:translate-x-2">
         {title}
       </h3>
-      <div className="flex gap-8">
+      <div className="flex gap-8 flex-wrap">
         {skills.map((skill, index) => (
           <div
             key={index}
