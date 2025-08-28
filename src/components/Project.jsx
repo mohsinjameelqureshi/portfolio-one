@@ -8,19 +8,8 @@ const Project = ({ theme }) => {
       title: "Agency AI",
       description:
         "A sleek and responsive landing page for agencies to highlight their portfolio, client testimonials, and services built to convert visitors into clients.",
-      technologies: [
-        "React.js",
-        "Tailwind CSS",
-        "Framer",
-        "React.js",
-        "Tailwind CSS",
-        "Framer",
-      ],
-      features: [
-        "A landing page to convert visitors into clients.",
-        "A landing page to convert visitors into clients.",
-        "A landing page to convert visitors into clients.",
-      ],
+      technologies: ["React.js", "Tailwind CSS", "Framer"],
+      features: ["A landing page to convert visitors into clients."],
       href: "https://agency-ai-ashen.vercel.app/",
     },
   ];
