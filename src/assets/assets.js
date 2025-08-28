@@ -40,6 +40,9 @@ import collegeLight from "./college-light.svg";
 import collegeDark from "./college-dark.svg";
 import uniDark from "./university-dark.svg";
 import uniLight from "./university-light.svg";
+import agencyai from "./projects/agency-ai.webp";
+import linkDark from "./link-dark.svg";
+import linkLight from "./link-light.svg";
 
 const assets = {
   css,
@@ -84,6 +87,9 @@ const assets = {
   collegeLight,
   uniDark,
   uniLight,
+  agencyai,
+  linkDark,
+  linkLight,
 };
 
 export default assets;

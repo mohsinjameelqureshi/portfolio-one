@@ -5,6 +5,7 @@ import Skills from "./components/Skills";
 import Contact from "./components/Contact";
 import { Toaster } from "react-hot-toast";
 import Education from "./components/Education";
+import Project from "./components/Project";
 
 function App() {
   const [theme, setTheme] = useState("light");
@@ -15,6 +16,7 @@ function App() {
       <Hero theme={theme} />
       <Education theme={theme} />
       <Skills theme={theme} />
+      <Project theme={theme} />
       <Contact theme={theme} />
     </div>
   );
