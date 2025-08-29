@@ -9,7 +9,9 @@ import Project from "./components/Project";
 import Experience from "./components/Experience";
 
 function App() {
-  const [theme, setTheme] = useState("light");
+  const [theme, setTheme] = useState(
+    localStorage.getItem("theme") ? localStorage.getItem("theme") : "light"
+  );
   return (
     <div className="dark:bg-blackbg relative">
       <Toaster />
