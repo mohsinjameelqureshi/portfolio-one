@@ -43,6 +43,10 @@ import uniLight from "./university-light.svg";
 import agencyai from "./projects/agency-ai.webp";
 import linkDark from "./link-dark.svg";
 import linkLight from "./link-light.svg";
+import closeLight from "./close-light.svg";
+import closeDark from "./close-dark.svg";
+import menuDark from "./menu-dark.svg";
+import menuLight from "./menu-light.svg";
 
 const assets = {
   css,
@@ -90,6 +94,10 @@ const assets = {
   agencyai,
   linkDark,
   linkLight,
+  closeDark,
+  closeLight,
+  menuDark,
+  menuLight,
 };
 
 export default assets;

@@ -89,7 +89,10 @@ const Skills = ({ theme }) => {
   ];
 
   return (
-    <section id="skills" className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section
+      id="skills"
+      className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 scroll-mt-16"
+    >
       <div>
         <h2 className="dark:text-white font-bold text-3xl mb-3">My Skills</h2>
         <p className="text-gray-500 dark:text-white/75">

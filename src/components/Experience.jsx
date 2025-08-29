@@ -16,7 +16,7 @@ const Experience = () => {
   return (
     <section
       id="experience"
-      className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 my-18 "
+      className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 my-18 scroll-mt-16"
     >
       <h2 className="dark:text-white font-bold text-3xl mb-3">Experience</h2>
       <div className="my-10 space-y-8">

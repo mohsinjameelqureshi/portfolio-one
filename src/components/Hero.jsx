@@ -5,7 +5,7 @@ const Hero = ({ theme }) => {
   return (
     <main className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
       <section
-        id="#"
+        id="about"
         className=" py-20 flex flex-col md:flex-row items-center justify-between gap-20 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8"
       >
         {/* LEFT SIDE */}

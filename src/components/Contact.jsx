@@ -62,10 +62,10 @@ const Contact = ({ theme }) => {
   return (
     <section
       id="contact"
-      className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-18"
+      className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 pt-18 scroll-mt-16"
     >
       <div>
-        <h2 className="dark:text-white font-bold text-3xl mb-3">Contact Me</h2>
+        <h2 className="dark:text-white font-bold text-3xl">Contact Me</h2>
         <div className="mt-8 grid md:grid-cols-2">
           <div>
             {/*Left Side */}
@@ -151,6 +151,9 @@ const Contact = ({ theme }) => {
               </button>
             </form>
           </div>
+        </div>
+        <div className="flex justify-center items-end  mt-10 pb-5 text-sm text-gray-500 dark:text-white/75">
+          <p>© 2025 Mohsin. All rights reserved.</p>
         </div>
       </div>
     </section>

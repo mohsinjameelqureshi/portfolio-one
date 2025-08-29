@@ -22,7 +22,7 @@ const Education = ({ theme }) => {
   return (
     <section
       id="education"
-      className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 mb-18"
+      className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 mb-18 scroll-mt-16"
     >
       <h2 className="dark:text-white font-bold text-3xl mb-3">Education</h2>
       <div className="my-10 space-y-5">
