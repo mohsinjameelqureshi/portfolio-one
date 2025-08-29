@@ -1,5 +1,6 @@
 import React from "react";
 import assets from "../assets/assets";
+import { motion } from "motion/react";
 
 const Project = ({ theme }) => {
   const projects = [
@@ -18,10 +19,22 @@ const Project = ({ theme }) => {
       id="projects"
       className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 my-18 scroll-mt-16"
     >
-      <h2 className="dark:text-white font-bold text-3xl mb-3">Projects</h2>
+      <motion.h2
+        initial={{ opacity: 0, x: -20 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        transition={{ duration: 0.5, delay: 0.2 }}
+        viewport={{ once: true }}
+        className="dark:text-white font-bold text-3xl mb-3"
+      >
+        Projects
+      </motion.h2>
       <div className="py-8 space-y-5 ">
         {projects.map((project, index) => (
-          <div
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.2 }}
+            viewport={{ once: true }}
             key={index}
             className="grid md:grid-cols-2 group border rounded-lg border-gray-300 dark:border-gray-400 "
           >
@@ -71,7 +84,7 @@ const Project = ({ theme }) => {
                 </button>
               </a>
             </div>
-          </div>
+          </motion.div>
         ))}
       </div>
     </section>

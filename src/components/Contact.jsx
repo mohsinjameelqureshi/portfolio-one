@@ -1,6 +1,7 @@
 import React from "react";
 import assets from "../assets/assets";
 import toast from "react-hot-toast";
+import { motion } from "motion/react";
 
 const Contact = ({ theme }) => {
   const onSubmit = async (event) => {
@@ -64,7 +65,12 @@ const Contact = ({ theme }) => {
       id="contact"
       className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 pt-18 scroll-mt-16"
     >
-      <div>
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5, delay: 0.2 }}
+        viewport={{ once: true }}
+      >
         <h2 className="dark:text-white font-bold text-3xl">Contact Me</h2>
         <div className="mt-8 grid md:grid-cols-2">
           <div>
@@ -152,9 +158,9 @@ const Contact = ({ theme }) => {
             </form>
           </div>
         </div>
-        <div className="flex justify-center items-end  mt-10 pb-5 text-sm text-gray-500 dark:text-white/75">
-          <p>© 2025 Mohsin. All rights reserved.</p>
-        </div>
+      </motion.div>
+      <div className="flex justify-center items-end  mt-10 pb-5 text-sm text-gray-500 dark:text-white/75">
+        <p>© 2025 Mohsin. All rights reserved.</p>
       </div>
     </section>
   );

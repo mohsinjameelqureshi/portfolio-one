@@ -1,4 +1,5 @@
 import React from "react";
+import { motion } from "motion/react";
 
 const Experience = () => {
   const experience = [
@@ -18,10 +19,24 @@ const Experience = () => {
       id="experience"
       className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 my-18 scroll-mt-16"
     >
-      <h2 className="dark:text-white font-bold text-3xl mb-3">Experience</h2>
+      <motion.h2
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5, delay: 0.2 }}
+        viewport={{ once: true }}
+        className="dark:text-white font-bold text-3xl mb-3"
+      >
+        Experience
+      </motion.h2>
       <div className="my-10 space-y-8">
         {experience.map((exp, index) => (
-          <div key={index}>
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.2 }}
+            viewport={{ once: true }}
+            key={index}
+          >
             <h3 className="dark:text-white font-medium text-xl ">
               {exp.position}
             </h3>
@@ -46,7 +61,7 @@ const Experience = () => {
                 </span>
               ))}
             </div>
-          </div>
+          </motion.div>
         ))}
       </div>
     </section>

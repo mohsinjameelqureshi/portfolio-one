@@ -1,15 +1,26 @@
 import React from "react";
 import assets from "../assets/assets";
+import { motion } from "motion/react";
 
 const TechSection = ({ title, skills, theme }) => {
   return (
     <div className="py-6">
-      <h3 className="dark:text-white font-medium text-xl transition-transform duration-200 hover:translate-x-2">
+      <motion.h3
+        initial={{ opacity: 0, y: 10 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5, delay: 0 }}
+        viewport={{ once: true }}
+        className="dark:text-white font-medium text-xl transition-transform duration-200 hover:translate-x-2"
+      >
         {title}
-      </h3>
+      </motion.h3>
       <div className="flex gap-8 flex-wrap">
         {skills.map((skill, index) => (
-          <div
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: index * 0.2 }}
+            viewport={{ once: true }}
             key={index}
             className=" mt-5 flex flex-col justify-center items-center group "
           >
@@ -23,7 +34,7 @@ const TechSection = ({ title, skills, theme }) => {
             <span className="text-gray-500 dark:text-white/75 group-hover:text-black dark:group-hover:text-white text-sm">
               {skill.name}
             </span>
-          </div>
+          </motion.div>
         ))}
       </div>
     </div>

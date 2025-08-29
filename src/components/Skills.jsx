@@ -1,6 +1,7 @@
 import React from "react";
 import TechSection from "./TechSection";
 import assets from "../assets/assets";
+import { motion } from "motion/react";
 
 const Skills = ({ theme }) => {
   const frontEnd = [
@@ -94,11 +95,25 @@ const Skills = ({ theme }) => {
       className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 scroll-mt-16"
     >
       <div>
-        <h2 className="dark:text-white font-bold text-3xl mb-3">My Skills</h2>
-        <p className="text-gray-500 dark:text-white/75">
+        <motion.h2
+          initial={{ opacity: 0, x: -20 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.5, delay: 0.2 }}
+          viewport={{ once: true }}
+          className="dark:text-white font-bold text-3xl mb-3"
+        >
+          My Skills
+        </motion.h2>
+        <motion.p
+          initial={{ opacity: 0, x: -20 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.5, delay: 0.2 }}
+          viewport={{ once: true }}
+          className="text-gray-500 dark:text-white/75"
+        >
           Technologies and tools I've worked with throughout my projects and
           experience
-        </p>
+        </motion.p>
       </div>
       <TechSection title={"Front End"} skills={frontEnd} theme={theme} />
       <TechSection title={"Back End"} skills={backend} theme={theme} />

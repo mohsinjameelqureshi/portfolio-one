@@ -1,5 +1,6 @@
 import React from "react";
 import assets from "../assets/assets";
+import { motion } from "motion/react";
 
 const Hero = ({ theme }) => {
   return (
@@ -9,7 +10,13 @@ const Hero = ({ theme }) => {
         className=" py-20 flex flex-col md:flex-row items-center justify-between gap-20 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8"
       >
         {/* LEFT SIDE */}
-        <div className="flex-1 space-y-6">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: 0.2 }}
+          viewport={{ once: true }}
+          className="flex-1 space-y-6"
+        >
           {/* Name + Title */}
           <div>
             <h1 className="text-3xl sm:text-4xl font-bold tracking-tight dark:text-white">
@@ -86,42 +93,92 @@ const Hero = ({ theme }) => {
               </button>
             </a>
           </div>
-        </div>
+        </motion.div>
 
         {/* RIGHT SIDE (skills / image / icons) */}
-        <div className=" grid grid-cols-2 gap-3 max-w-xs">
-          <div className="w-25 h-16 sm:w-28 sm:h-22 md:w-28 md:h-26 bg-gray-100 dark:bg-gray-900 p-3 rounded-lg flex flex-col items-center justify-center hover:scale-105 transition">
-            <img src={assets.react} alt="React" className="h-6 w-6" />
+        <motion.div
+          initial={{ opacity: 0, z: -20 }}
+          whileInView={{ opacity: 1, z: 0 }}
+          transition={{ duration: 0.5, delay: 0.2 }}
+          viewport={{ once: true }}
+          className=" grid grid-cols-2 gap-3 max-w-xs"
+        >
+          <div className="mt-2 w-25 h-16 sm:w-28 sm:h-22 md:w-28 md:h-26 bg-gray-100 dark:bg-gray-900 p-3 rounded-lg flex flex-col items-center justify-center hover:scale-105 transition">
+            <motion.img
+              animate={{ rotate: 360 }}
+              transition={{
+                repeat: Infinity, // keeps looping
+                ease: "linear", // smooth constant speed
+                duration: 7, // time for one full rotation (in seconds)
+              }}
+              src={assets.react}
+              alt="React"
+              className="h-8 w-8"
+            />
             <span className="mt-1 text-xs sm:text-sm dark:text-white">
               React.js
             </span>
           </div>
 
-          <div className="w-25 h-16 sm:w-28 sm:h-22 md:w-28 md:h-26 bg-gray-100 dark:bg-gray-900 p-3 rounded-lg flex flex-col items-center justify-center hover:scale-105 transition">
+          <motion.div
+            animate={{
+              y: [0, -20, 0], // move up and back down
+            }}
+            transition={{
+              duration: 3,
+              repeat: Infinity, // loop forever
+              ease: "easeInOut",
+            }}
+            className=" mt-2 w-25 h-16 sm:w-28 sm:h-22 md:w-28 md:h-26 bg-gray-100 dark:bg-gray-900 p-3 rounded-lg flex flex-col items-center justify-center hover:scale-105 transition"
+          >
             <img
               src={theme === "dark" ? assets.nextDark : assets.nextLight}
               alt="Next.js"
-              className="h-6 w-6"
+              className="h-8 w-8"
             />
             <span className="mt-1 text-xs sm:text-sm dark:text-white">
               Next.js
             </span>
-          </div>
+          </motion.div>
 
           <div className="w-25 h-16 sm:w-28 sm:h-22 md:w-28 md:h-26 bg-gray-100 dark:bg-gray-900 p-3 rounded-lg flex flex-col items-center justify-center hover:scale-105 transition">
-            <img src={assets.mongodb} alt="MongoDB" className="h-6 w-6" />
+            <motion.img
+              animate={{ y: [0, -10, 0] }}
+              transition={{
+                duration: 3,
+                repeat: Infinity, // loop forever
+                ease: "easeInOut",
+              }}
+              src={assets.mongodb}
+              alt="MongoDB"
+              className="h-8 w-8"
+            />
             <span className="mt-1 text-xs sm:text-sm dark:text-white">
               MongoDB
             </span>
           </div>
 
-          <div className="w-25 h-16 sm:w-28 sm:h-22 md:w-28 md:h-26 bg-gray-100 dark:bg-gray-900 p-3 rounded-lg flex flex-col items-center justify-center hover:scale-105 transition">
-            <img src={assets.tailwind} alt="Tailwind" className="h-6 w-6" />
+          <motion.div
+            animate={{
+              boxShadow: [
+                "0 0 0px #7dd3fc", // no glow
+                "0 0 20px #7dd3fc", // bright glow
+                "0 0 0px #7dd3fc", // back to none
+              ],
+            }}
+            transition={{
+              duration: 5,
+              repeat: Infinity,
+              ease: "easeInOut",
+            }}
+            className="w-25 h-16 sm:w-28 sm:h-22 md:w-28 md:h-26 bg-gray-100 dark:bg-gray-900 p-3 rounded-lg flex flex-col items-center justify-center hover:scale-105 transition"
+          >
+            <img src={assets.tailwind} alt="Tailwind" className="h-8 w-8" />
             <span className="mt-1 text-xs sm:text-sm dark:text-white">
               Tailwind CSS
             </span>
-          </div>
-        </div>
+          </motion.div>
+        </motion.div>
       </section>
     </main>
   );
