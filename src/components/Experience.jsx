@@ -9,7 +9,7 @@ const Experience = () => {
       date: "24 Sep 2024 - 14 Mar 2025",
       worked: [
         "Design full responsive functional UI for multiple roles in app (Recycle Blue).",
-        "Design a full stack app like instagram but for soprts only with multiple roles (PlayPost).",
+        "Design a full stack app like instagram but for sports only with multiple roles (PlayPost).",
       ],
       tech: ["Flutter", "Firebase", "UI/UX", "Responsive Design"],
     },
