@@ -56,8 +56,8 @@ const Contact = ({ theme }) => {
       icon: assets.linkedinlight,
       icondark: assets.linkedindark,
       title: "LinkedIn",
-      description: "Todo",
-      href: "",
+      description: "Mohsin Jameel",
+      href: "https://www.linkedin.com/in/mohsin-jameel-13ab94325/",
     },
   ];
   return (
@@ -93,6 +93,7 @@ const Contact = ({ theme }) => {
                       {contact.title}
                     </p>
                     <a
+                      target="_blank"
                       href={contact.href}
                       className="font-medium dark:text-white"
                     >
