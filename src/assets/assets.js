@@ -47,6 +47,7 @@ import closeLight from "./close-light.svg";
 import closeDark from "./close-dark.svg";
 import menuDark from "./menu-dark.svg";
 import menuLight from "./menu-light.svg";
+import n8n from "./n8n.svg";
 
 const assets = {
   css,
@@ -98,6 +99,7 @@ const assets = {
   closeLight,
   menuDark,
   menuLight,
+  n8n,
 };
 
 export default assets;

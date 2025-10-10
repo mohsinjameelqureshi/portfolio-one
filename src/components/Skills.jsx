@@ -75,6 +75,11 @@ const Skills = ({ theme }) => {
       icondark: assets.vercelDark,
       name: "Vercel",
     },
+    {
+      icon: assets.n8n,
+      icondark: assets.n8n,
+      name: "n8n",
+    },
   ];
   const backend = [
     {
