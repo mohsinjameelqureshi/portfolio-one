@@ -5,6 +5,26 @@ import { motion } from "motion/react";
 const Project = ({ theme }) => {
   const projects = [
     {
+      image: assets.chatapp,
+      title: "Chatify",
+      description:
+        "A modern real-time chat app built with the MERN stack, featuring live messaging, rate-limited APIs, and welcome emails for new users.",
+      technologies: [
+        "React.js",
+        "Node.js",
+        "Express.js",
+        "MongoDB",
+        "Socket.IO",
+        "Tailwind CSS",
+      ],
+      features: [
+        "Real-time communication with Socket.IO",
+        "API rate limiting using Arcjet",
+        "Welcome emails powered by Resend",
+      ],
+      href: "https://chat-app-advance-mv43y.sevalla.app/",
+    },
+    {
       image: assets.agencyai,
       title: "Agency AI",
       description:

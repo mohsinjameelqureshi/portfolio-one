@@ -41,6 +41,7 @@ import collegeDark from "./college-dark.svg";
 import uniDark from "./university-dark.svg";
 import uniLight from "./university-light.svg";
 import agencyai from "./projects/agency-ai.webp";
+import chatapp from "./projects/chat-app.webp";
 import linkDark from "./link-dark.svg";
 import linkLight from "./link-light.svg";
 import closeLight from "./close-light.svg";
@@ -100,6 +101,7 @@ const assets = {
   menuDark,
   menuLight,
   n8n,
+  chatapp,
 };
 
 export default assets;
