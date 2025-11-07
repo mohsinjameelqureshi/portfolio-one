@@ -49,6 +49,7 @@ import closeDark from "./close-dark.svg";
 import menuDark from "./menu-dark.svg";
 import menuLight from "./menu-light.svg";
 import n8n from "./n8n.svg";
+import docker from "./docker.svg";
 
 const assets = {
   css,
@@ -102,6 +103,7 @@ const assets = {
   menuLight,
   n8n,
   chatapp,
+  docker,
 };
 
 export default assets;

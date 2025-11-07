@@ -66,6 +66,11 @@ const Skills = ({ theme }) => {
       name: "VS Code",
     },
     {
+      icon: assets.docker,
+      icondark: assets.docker,
+      name: "Docker",
+    },
+    {
       icon: assets.figma,
       icondark: assets.figma,
       name: "Figma",
