@@ -50,6 +50,8 @@ import menuDark from "./menu-dark.svg";
 import menuLight from "./menu-light.svg";
 import n8n from "./n8n.svg";
 import docker from "./docker.svg";
+import typescript from "./typescript.svg";
+import typescriptDark from "./typescript-dark.svg";
 
 const assets = {
   css,
@@ -104,6 +106,8 @@ const assets = {
   n8n,
   chatapp,
   docker,
+  typescript,
+  typescriptDark,
 };
 
 export default assets;

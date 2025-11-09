@@ -158,26 +158,26 @@ const Hero = ({ theme }) => {
             </span>
           </div>
 
-          <motion.div
-            animate={{
-              boxShadow: [
-                "0 0 0px #7dd3fc", // no glow
-                "0 0 20px #7dd3fc", // bright glow
-                "0 0 0px #7dd3fc", // back to none
-              ],
-            }}
-            transition={{
-              duration: 5,
-              repeat: Infinity,
-              ease: "easeInOut",
-            }}
-            className="w-25 h-16 sm:w-28 sm:h-22 md:w-28 md:h-26 bg-gray-100 dark:bg-gray-900 p-3 rounded-lg flex flex-col items-center justify-center hover:scale-105 transition"
-          >
-            <img src={assets.tailwind} alt="Tailwind" className="h-8 w-8" />
+          <div className="w-25 h-16 sm:w-28 sm:h-22 md:w-28 md:h-26 bg-gray-100 dark:bg-gray-900 p-3 rounded-lg flex flex-col items-center justify-center hover:scale-105 transition">
+            <motion.img
+              animate={{
+                rotateX: [0, 10, -10, 0],
+                rotateY: [0, -10, 10, 0],
+                y: [0, -5, 0],
+              }}
+              transition={{
+                duration: 6,
+                repeat: Infinity,
+                ease: "easeInOut",
+              }}
+              src={assets.tailwind}
+              alt="Tailwind"
+              className="h-8 w-8"
+            />
             <span className="mt-1 text-xs sm:text-sm dark:text-white">
               Tailwind CSS
             </span>
-          </motion.div>
+          </div>
         </motion.div>
       </section>
     </main>

@@ -11,6 +11,11 @@ const Skills = ({ theme }) => {
       name: "JavaScript",
     },
     {
+      icon: assets.typescript,
+      icondark: assets.typescriptDark,
+      name: "TypeScript",
+    },
+    {
       icon: assets.react,
       icondark: assets.react,
       name: "React",
