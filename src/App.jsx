@@ -13,7 +13,7 @@ function App() {
     localStorage.getItem("theme") ? localStorage.getItem("theme") : "light"
   );
   return (
-    <div className="dark:bg-blackbg relative">
+    <div className="min-h-screen dark:bg-blackbg relative">
       <Toaster />
       <Navbar theme={theme} setTheme={setTheme} />
       <Hero theme={theme} />
