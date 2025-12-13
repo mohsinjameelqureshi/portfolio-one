@@ -56,20 +56,21 @@ const Hero = ({ theme }) => {
 
           {/* Buttons */}
           <div className="flex gap-3 items-center">
-            <a href="/Mohsin.pdf" download="Mohsin-Resume.pdf">
-              <button className="p-2 dark:bg-white bg-black text-white dark:text-black flex gap-2 rounded-lg text-sm items-center cursor-pointer hover:scale-105 transition">
-                <img
-                  src={
-                    theme === "dark"
-                      ? assets.downloadDark
-                      : assets.downloadLight
-                  }
-                  alt="resume"
-                  className="h-5 w-5"
-                />
-                Resume
-              </button>
+            <a
+              href="/Mohsin.pdf"
+              download="Mohsin-Resume.pdf"
+              className="p-2 dark:bg-white bg-black text-white dark:text-black flex gap-2 rounded-lg text-sm items-center cursor-pointer hover:scale-105 transition"
+            >
+              <img
+                src={
+                  theme === "dark" ? assets.downloadDark : assets.downloadLight
+                }
+                alt="resume"
+                className="h-5 w-5"
+              />
+              Resume
             </a>
+
             <a target="_blank" href="https://github.com/mohsinjameelqureshi">
               <button className="border dark:border-gray-700 border-gray-300 p-2 rounded-lg cursor-pointer hover:scale-105 transition">
                 <img
