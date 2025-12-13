@@ -57,7 +57,7 @@ const Hero = ({ theme }) => {
           {/* Buttons */}
           <div className="flex gap-3 items-center">
             <a
-              href="/Mohsin.pdf"
+              href="/mohsin.pdf"
               download="Mohsin-Resume.pdf"
               className="p-2 dark:bg-white bg-black text-white dark:text-black flex gap-2 rounded-lg text-sm items-center cursor-pointer hover:scale-105 transition"
             >
