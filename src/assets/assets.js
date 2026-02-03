@@ -52,6 +52,7 @@ import n8n from "./n8n.svg";
 import docker from "./docker.svg";
 import typescript from "./typescript.svg";
 import typescriptDark from "./typescript-dark.svg";
+import privateChat from "./projects/private-chat.webp";
 
 const assets = {
   css,
@@ -108,6 +109,7 @@ const assets = {
   docker,
   typescript,
   typescriptDark,
+  privateChat,
 };
 
 export default assets;

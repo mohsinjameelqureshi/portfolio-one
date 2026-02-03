@@ -5,6 +5,28 @@ import { motion } from "motion/react";
 const Project = ({ theme }) => {
   const projects = [
     {
+      image: assets.privateChat,
+      title: "Private Chat",
+      description:
+        "Ephemeral private chat app built with Next.js, Elysia, and TypeScript, using Upstash Redis to store room messages with a 10-minute TTL for automatic cleanup. Real-time messaging powered by Upstash Realtime, with room-based communication and zero manual data management.",
+      technologies: [
+        "Next.js",
+        "Elysia.js",
+        "TypeScript",
+        "Upstash Redis",
+        "Upstash Realtime",
+        "React",
+        "TanStack Query",
+        "Zod",
+      ],
+      features: [
+        "Real-time room-based messaging with automatic 10-minute room expiry (TTL) using Upstash Redis",
+        "Instant message broadcasting via Upstash Realtime for seamless live chat",
+        "Secure room creation and validation with TypeScript, Zod, and Elysia APIs",
+      ],
+      href: "https://chat.mohsinjameel.dev/",
+    },
+    {
       image: assets.chatapp,
       title: "Chatify",
       description:
@@ -58,7 +80,7 @@ const Project = ({ theme }) => {
             key={index}
             className="grid md:grid-cols-2 group border rounded-lg border-gray-300 dark:border-gray-400 "
           >
-            <div className="h-[450px]  overflow-y-scroll rounded-l-lg  scrollbar-hide border-r border-gray-300 dark:border-gray-400 ">
+            <div className="h-[600px]  overflow-y-scroll rounded-l-lg  scrollbar-hide border-r border-gray-300 dark:border-gray-400 ">
               {/*Left Side */}
               <img
                 src={project.image}
